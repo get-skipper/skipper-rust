@@ -1,0 +1,21 @@
+[package]
+name = "get-skipper"
+description = "Skipper for Rust: enable or disable tests from a Google Spreadsheet (#[skipper] for libtest, rstest, tokio)"
+readme = "../../README.md"
+keywords = ["testing", "skip", "flaky", "google-sheets", "quarantine"]
+categories = ["development-tools::testing"]
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[dependencies]
+skipper-core.workspace = true
+skipper-macros.workspace = true
+
+[dev-dependencies]
+rstest = "0.26"
+tokio = { version = "1", features = ["macros", "rt"] }
+serde_json = "1"

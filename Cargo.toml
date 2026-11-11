@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = ["crates/skipper-core", "crates/skipper-macros", "crates/get-skipper", "crates/cargo-skipper", "crates/skipper-cucumber"]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.88"
+license = "MIT"
+repository = "https://github.com/get-skipper/skipper-rust"
+homepage = "https://get-skipper.github.io"
+
+[workspace.dependencies]
+skipper-core = { path = "crates/skipper-core", version = "1.0.0" }
+skipper-macros = { path = "crates/skipper-macros", version = "1.0.0" }
+get-skipper = { path = "crates/get-skipper", version = "1.0.0" }

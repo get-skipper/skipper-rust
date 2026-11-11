@@ -1,0 +1,16 @@
+[package]
+name = "cargo-skipper"
+description = "`cargo skipper test`: run Rust tests with Skipper (one spreadsheet fetch, quarantine report, sync mode)"
+readme = "../../README.md"
+keywords = ["testing", "cargo-subcommand", "flaky", "google-sheets"]
+categories = ["development-tools::testing", "development-tools::cargo-plugins"]
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+skipper-core.workspace = true

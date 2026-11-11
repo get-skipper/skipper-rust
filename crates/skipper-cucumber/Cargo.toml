@@ -1,0 +1,24 @@
+[package]
+name = "skipper-cucumber"
+description = "Skipper for cucumber-rs: enable or disable scenarios from a Google Spreadsheet"
+readme = "../../README.md"
+keywords = ["testing", "cucumber", "bdd", "flaky", "google-sheets"]
+categories = ["development-tools::testing"]
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+cucumber = "0.23"
+skipper-core.workspace = true
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
+[[test]]
+name = "bdd"
+harness = false
